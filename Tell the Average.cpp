@@ -2,8 +2,8 @@
 using namespace std;
 
 const int MOD=1000000007;
-void solve() {
-    int n;
+int main(){
+     int n;
     cin >> n;
     deque<int> v(n);
     for (auto &i: v)cin >> i;
@@ -16,12 +16,5 @@ void solve() {
         v[0]=ans;
     }
     cout<<v[0]%MOD;
-}
-
- 
-
-int main(){
-    int t=1 ;
-    while (t--) solve();
     return 0;
 }
