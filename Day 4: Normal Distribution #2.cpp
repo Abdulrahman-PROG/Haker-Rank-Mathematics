@@ -1,8 +1,10 @@
-#include <iostream>
+#include <bits/stdc++.h>
 #include <cmath>
 #include <iomanip> // for setprecision
 #include <limits> // for NAN
-
+#define e "\n"
+#define ll long long
+#define FAST ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0)
 using namespace std;
 
 double calc_prob(double lower_bound, double upper_bound = NAN) {
@@ -18,7 +20,7 @@ double calc_prob(double lower_bound, double upper_bound = NAN) {
 }
 
 int main() {
-    cout << fixed << setprecision(3) << calc_prob(19.5) << endl;
-    cout << fixed << setprecision(3) << calc_prob(20.0, 22.0) << endl;
+    cout << fixed << setprecision(3) << calc_prob(19.5) << e;
+    cout << fixed << setprecision(3) << calc_prob(20.0, 22.0) << e;
     return 0;
 }
