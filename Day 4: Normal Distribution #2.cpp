@@ -20,6 +20,7 @@ double calc_prob(double lower_bound, double upper_bound = NAN) {
 }
 
 int main() {
+    FAST;
     cout << fixed << setprecision(3) << calc_prob(19.5) << e;
     cout << fixed << setprecision(3) << calc_prob(20.0, 22.0) << e;
     return 0;
