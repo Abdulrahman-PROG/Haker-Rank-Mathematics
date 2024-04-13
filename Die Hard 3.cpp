@@ -31,7 +31,7 @@ int main() {
     }
 
     for (const string& result : out) {
-        cout << result << endl;
+        cout << result << e;
     }
 
     return 0;
