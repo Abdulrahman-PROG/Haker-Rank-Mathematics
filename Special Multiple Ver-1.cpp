@@ -1,6 +1,9 @@
-#include <iostream>
-#include <string>
+#include <bits/stdc++.h>
 #include <cstdlib> // For atoi
+using namespace std;
+#define e "\n"
+#define ll long long
+#define FAST ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0)
 
 class Solution {
 public:
@@ -8,8 +11,8 @@ public:
         int N = cipher;
         int x = 1;
         while (true) {
-            std::string binary = to_binary(x);
-            std::string nine_ary = replace_digits(binary, '1', '9');
+            string binary = to_binary(x);
+            string nine_ary = replace_digits(binary, '1', '9');
             int dec = atoi(nine_ary.c_str()); // Convert string to integer
             if (dec % N == 0) {
                 return dec;
@@ -19,8 +22,8 @@ public:
     }
 
 private:
-    std::string to_binary(int x) {
-        std::string binary = "";
+    string to_binary(int x) {
+        string binary = "";
         while (x > 0) {
             binary = (x % 2 == 0 ? "0" : "1") + binary;
             x /= 2;
@@ -28,7 +31,7 @@ private:
         return binary;
     }
 
-    std::string replace_digits(std::string str, char from, char to) {
+    string replace_digits(string str, char from, char to) {
         for (size_t i = 0; i < str.length(); ++i) {
             if (str[i] == from) {
                 str[i] = to;
@@ -39,13 +42,14 @@ private:
 };
 
 int main() {
+    FAST;
     Solution solution;
     int T;
-    std::cin >> T; // Read the number of test cases
+    cin >> T; // Read the number of test cases
     for (int i = 0; i < T; ++i) {
         int cipher;
-        std::cin >> cipher; // Read the value of N
-        std::cout << solution.solve(cipher) << std::endl; // Print the solution
+        cin >> cipher; // Read the value of N
+        cout << solution.solve(cipher) << e; // Print the solution
     }
     return 0;
 }
