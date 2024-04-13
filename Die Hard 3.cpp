@@ -1,7 +1,8 @@
-#include <iostream>
-#include <vector>
-#include <algorithm>
+#include <bits/stdc++.h>
 using namespace std;
+#define e "\n"
+#define ll long long
+#define FAST ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0)
 
 int gcd(int a, int b) {
     while (b != 0) {
@@ -13,6 +14,7 @@ int gcd(int a, int b) {
 }
 
 int main() {
+    FAST;
     int n;
     cin >> n;
 
