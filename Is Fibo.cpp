@@ -1,13 +1,17 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
+#define e "\n"
+#define ll long long
+#define FAST ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0)
 
 int main() {
+    FAST;
     int n;
     int isFib = 0;
-    long long unsigned int num;
-    long long unsigned int fib1 = 0;
-    long long unsigned int fib2 = 1;
-    long long unsigned int nextfib = 0;
+    ll unsigned int num;
+    ll unsigned int fib1 = 0;
+    ll unsigned int fib2 = 1;
+    ll unsigned int nextfib = 0;
 
     cin >> n;
 
@@ -24,9 +28,9 @@ int main() {
         }
 
         if (isFib) {
-            cout << "IsFibo" << endl;
+            cout << "IsFibo" << e;
         } else {
-            cout << "IsNotFibo" << endl;
+            cout << "IsNotFibo" << e;
         }
 
         fib1 = 0;
