@@ -1,8 +1,8 @@
-#include <iostream>
-#include <cmath>
-#include <iomanip>
-
+#include <bits/stdc++.h>
 using namespace std;
+#define e "\n"
+#define ll long long
+#define FAST ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0)
 
 double factorial(int n) {
     return (n == 0) ? 1 : n * factorial(n - 1);
@@ -18,6 +18,7 @@ p is used as the probability of success in a single trial, which is used to calc
 */
 
 int main() {
+    FAST;
     double result1 = 0;
     for (int i = 3; i <= 4; ++i) {
         result1 += binomialCoefficient(4, i, 4.0 / 5);
@@ -28,8 +29,8 @@ int main() {
         result2 += binomialCoefficient(4, i, 4.0 / 5);
     }
 
-    cout << fixed << setprecision(3) << result1 << endl;
-    cout << fixed << setprecision(3) << result2 << endl;
+    cout << fixed << setprecision(3) << result1 << e;
+    cout << fixed << setprecision(3) << result2 << e;
 
     return 0;
 }
