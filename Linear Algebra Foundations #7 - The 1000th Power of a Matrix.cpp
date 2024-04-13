@@ -1,7 +1,8 @@
-#include <iostream>
-#include <vector>
-
+#include <bits/stdc++.h>
 using namespace std;
+#define e "\n"
+#define ll long long
+#define FAST ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0)
 
 vector<vector<int>> matrixMultiply(vector<vector<int>>& A, vector<vector<int>>& B) {
     int n = A.size();
@@ -33,13 +34,14 @@ vector<vector<int>> matrixPower(vector<vector<int>>& A, int power) {
 }
 
 int main() {
+    FAST;
     vector<vector<int>> A = {{-2, -9}, {1, 4}};
 
     vector<vector<int>> result = matrixPower(A, 1000);
 
-    cout << result[0][0] << endl; 
-    cout << result[0][1] << endl; 
-    cout << result[1][0] << endl; 
-    cout << result[1][1] << endl; 
+    cout << result[0][0] << e; 
+    cout << result[0][1] << e; 
+    cout << result[1][0] << e; 
+    cout << result[1][1] << e; 
     return 0;
 }
