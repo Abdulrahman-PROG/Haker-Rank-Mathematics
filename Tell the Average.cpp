@@ -1,8 +1,12 @@
 #include <bits/stdc++.h>
 using namespace std;
+#define e "\n"
+#define ll long long
+#define FAST ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0)
 
 const int MOD=1000000007;
 int main(){
+     FAST;
      int n;
     cin >> n;
     deque<int> v(n);
@@ -15,6 +19,6 @@ int main(){
         v.pop_front();
         v[0]=ans;
     }
-    cout<<v[0]%MOD;
+    cout<<v[0]%MOD<<e;
     return 0;
 }
