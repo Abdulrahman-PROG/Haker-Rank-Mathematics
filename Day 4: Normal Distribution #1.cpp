@@ -1,6 +1,9 @@
-#include <iostream>
+#include <bits/stdc++.h>
 #include <cmath>
 #include <iomanip> // for setprecision
+#define e "\n"
+#define ll long long
+#define FAST ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0)
 using namespace std;
 
 double normalCDF(double x, double mean, double std_dev) {
@@ -8,6 +11,7 @@ double normalCDF(double x, double mean, double std_dev) {
 }
 
 int main() {
+    FAST;
     double mean = 30; 
     double std_dev = 4; 
     double cdf40 = normalCDF(40.0, mean, std_dev);
