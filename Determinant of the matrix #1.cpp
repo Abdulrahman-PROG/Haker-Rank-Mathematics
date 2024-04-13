@@ -1,12 +1,8 @@
-#include <cmath>
-#include <cstdio>
-#include <vector>
-#include <iostream>
-#include <algorithm>
-#include <cmath>
+#include <bits/stdc++.h>
 using namespace std;
-
-#include <cmath>
+#define e "\n"
+#define ll long long
+#define FAST ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0)
 
 double determinant(int** a, int n) {
     double det = 1.0;
@@ -50,13 +46,14 @@ double determinant(int** a, int n) {
 
 
 int main() {
+    FAST;
     int arr[5][5] = {{3,0,0,-2,4},
                     {0,2,0,0,0},
                     {0,-1,0,5,-3},
                     {-4,0,1,0,6},
                     {0,-1,0,3,2}};
 
-    cout<<determinant((int**)arr,5);
+    cout<<determinant((int**)arr,5)<<e;
     
     return 0;
 }
