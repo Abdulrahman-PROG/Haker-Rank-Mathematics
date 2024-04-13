@@ -27,9 +27,9 @@ int main() {
     double probBigger21 = 1 - cdf21;
     double probBetween30_35 = cdf35 - cdf30;
 
-    cout << fixed <<setprecision(3)<< probLess40 << endl;
-    cout << fixed <<setprecision(3)<< probBigger21 << endl;
-    cout << fixed <<setprecision(3)<< probBetween30_35 << endl;
+    cout << fixed <<setprecision(3)<< probLess40 << e;
+    cout << fixed <<setprecision(3)<< probBigger21 << e;
+    cout << fixed <<setprecision(3)<< probBetween30_35 << e;
 
 
     return 0;
