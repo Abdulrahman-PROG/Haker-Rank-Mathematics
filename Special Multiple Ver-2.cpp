@@ -1,9 +1,10 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
+#define e "\n"
+#define ll long long
+#define FAST ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0)
 
-// Function to find the smallest multiple of n composed only of the digits 9 and 0
 long nine_zero(int n) {
-    // Start iterating from 1 to find the smallest multiple
     for (int i = 1; ; ++i) {
         long multiple = 0;
         long chiffre = 9;
@@ -13,23 +14,17 @@ long nine_zero(int n) {
             chiffre *= 10; // Multiply by 10 to shift digits to the left
         }
 
-        // Check if the constructed multiple is divisible by n
-        if (multiple % n == 0) return multiple; // Return the multiple if divisible
+        if (multiple % n == 0) return multiple; 
     }
 }
 
 int main() {
+    FAST;
     int t, n;
-    
-    // Read the number of test cases
     cin >> t;
-    // Iterate over each test case
     while (t--) {
-        // Read the integer n for the current test case
         cin >> n;
-        // Call the function to find the smallest multiple of n
-        // composed only of the digits 9 and 0, then print the result
-        cout << nine_zero(n) << endl;
+        cout << nine_zero(n) << e;
     }
 
     return 0;
